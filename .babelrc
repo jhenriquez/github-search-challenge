@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "es2015",
+    "react"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+      "actions": "./src/app/actions",
+      "components": "./src/app/components",
+      "containers": "./src/app/containers",
+      "middlewares": "./src/app/middlewares",
+      "models": "./src/app/models",
+      "reducers": "./src/app/reducers",
+      "sagas": "./src/app/sagas",
+      "services": "./src/app/services",
+      "store": "./src/app/store",
+      "mocks": "./mocks"
+    }
+    }]
+  ]
+}

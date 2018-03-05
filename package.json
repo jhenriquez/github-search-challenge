@@ -1,0 +1,60 @@
+{
+  "name": "github-viewer",
+  "version": "0.0.1",
+  "description": "View details about github organizations and repositories",
+  "main": "index.js",
+  "repository": "https://github.com/jhenriquez/github-viewer",
+  "author": "julio.m.henriquez@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --progress",
+    "test": "npx jest",
+    "build": "webpack --progress",
+    "build:w": "webpack --watch --progress",
+    "check": "flow check"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
+    "eslint": "^4.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "flow-bin": "^0.50.0",
+    "html-webpack-plugin": "^2.29.0",
+    "jest": "^20.0.4",
+    "nock": "^9.0.13",
+    "node-fetch": "^1.7.1",
+    "react-test-renderer": "^15.6.1",
+    "redux-devtools-extension": "^2.13.2",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "dependencies": {
+    "identity-obj-proxy": "^3.0.0",
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.2",
+    "redux": "^3.7.1",
+    "redux-saga": "^0.15.4",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "eslintIgnore": [
+    "flow-typed/",
+    "coverage/"
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "\\.css$": "identity-obj-proxy"
+    }
+  }
+}

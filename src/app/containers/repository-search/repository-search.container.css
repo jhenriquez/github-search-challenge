@@ -1,0 +1,43 @@
+
+.repository-search {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  height: 80%;
+}
+
+.searchbox__input {
+  width: 100%;
+  border: none;
+  background-color: #D9D9D9;
+  height: 3em;
+  padding: 1em;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.search-results__item {
+  cursor: pointer;
+  width: 325px;
+  margin: 1em;
+}
+
+.search-results__item .card {
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.search-results__item .card:hover {
+  border-color: #D7F3FF;
+}
+
+.card-header__badge {
+  position: absolute;
+  right: 1em;
+}
